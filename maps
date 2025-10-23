@@ -110,6 +110,6 @@
     }
   </script>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=TA_CLE_API_ICI&callback=initMap&v=weekly" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ_F3exVzL8oykAmR-FAnwThntf-BabtA&callback=initMap&v=weekly" defer></script>
 </body>
 </html>

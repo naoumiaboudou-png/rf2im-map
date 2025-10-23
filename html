@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte RF2IM</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+    .rf2im-iw {
+      font-family: 'Poppins', sans-serif;
+      width: 260px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .rf2im-iw img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+    }
+    .rf2im-iw h4 {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 10px 12px 4px;
+      color: #0d2d57;
+    }
+    .rf2im-iw p {
+      font-size: 13px;
+      color: #555;
+      margin: 0 12px 10px;
+      line-height: 1.4;
+    }
+    .rf2im-iw a {
+      display: block;
+      text-align: center;
+      background: linear-gradient(90deg, #0d2d57, #0077ff);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 0 0 12px 12px;
+      transition: 0.3s;
+    }
+    .rf2im-iw a:hover {
+      background: linear-gradient(90deg, #0047a3, #0096ff);
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script>
+    let map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 11,
+        center: { la
